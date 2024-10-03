@@ -1,5 +1,7 @@
 package ArraysAndStrings;
 
+import java.util.HashSet;
+
 public class ContainsDuplicate {
 
 //    public boolean containsDuplicate(int[] nums) {
@@ -17,14 +19,14 @@ public class ContainsDuplicate {
 //        return false;
 //    }
 
-//    public boolean containsDuplicate(int[] nums) {
-//        HashSet<Integer> integerset = new HashSet<Integer>();
-//        for (int num : nums) {
-//            if (!integerset.add(num)) {
-//                return true;
-//            }
-//
-//        }
-//        return false;
-//    }
+    public boolean containsDuplicate(int[] nums) {
+        HashSet<Integer> integerset = new HashSet<Integer>();
+        for (int num : nums) {
+            if (!integerset.add(num)) {
+                return true;
+            }
+
+        }
+        return false;
+    }
 }
